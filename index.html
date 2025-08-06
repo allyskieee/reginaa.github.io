@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome to My Website</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: url('black-copy.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      display: flex;
+      max-width: 1000px;
+      width: 90%;
+      background-color: rgba(0, 0, 0, 0.7);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    }
+
+    .left {
+      flex: 1;
+      background: url('me.jpg') no-repeat center center;
+      background-size: cover;
+      min-height: 500px;
+    }
+
+    .right {
+      flex: 2;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .right h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .right p {
+      font-size: 18px;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+
+    .right a {
+      color: #00bfff;
+      text-decoration: none;
+      font-size: 18px;
+      margin-bottom: 15px;
+      display: inline-block;
+      transition: color 0.3s ease;
+    }
+
+    .right a:hover {
+      color: #ffffff;
+    }
+
+    @media screen and (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .left {
+        min-height: 300px;
+      }
+
+      .right {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left"></div>
+    <div class="right">
+      <h1>Hello, I'm Regina Estacio</h1>
+      <p>
+        Welcome to my personal website! I'm passionate about creativity, expression, and connection. Here you'll find more about who I am, what I love, and how to reach me.
+      </p>
+      <a href="about.html">➤ About Me</a>
+      <a href="blog.html">➤ My Blog & Hobbies</a>
+      <a href="contact.html">➤ Contact & Socials</a>
+    </div>
+  </div>
+</body>
+</html>
